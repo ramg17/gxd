@@ -1767,6 +1767,81 @@ input[type=submit] {
   background-color: DodgerBlue !important; 
   color: #ffffff; }
 
-
+  .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #1a2a44;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #dfe6e9;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {
+            border-color: #3ed8ff; /* Gold */
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+            outline: none;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        button[type="submit"] {
+            padding: 12px;
+            background: #3adefb; /* Gold */
+            color: #1a2a44;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button[type="submit"]:hover {
+            background: #6dff3c;
+        }
+        .error {
+            color: #e63946;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+        .form-group.invalid .error {
+            display: block;
+        }
+        .form-group.invalid input, .form-group.invalid textarea {
+            border-color: #e63946;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .header p {
+                font-size: 14px;
+            }
+            input, textarea {
+                padding: 10px;
+            }
+            button[type="submit"] {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
 
 
