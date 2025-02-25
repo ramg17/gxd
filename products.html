@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Product Catalog</title>
+        <meta name="description" content="GASDANIEL COMPANY, we're more than just a supplier; we're a comprehensive engineering solutions provider. We empower businesses across diverse sectors by offering a unique blend of chemical and equipment supply, cutting-edge software development, and expert engineering consultation and design services. Our integrated approach allows us to address complex challenges with innovative and efficient solutions, driving progress and maximizing value for our clients.">
+        <meta name="keywords" content="gasdaniel, Gasdaniel Company, Chemical and Equipment Supply, Software Development, Engineering Consultation and Design, ecomerce, store,  laboratory equipment, chemicals, fertilizers, pesticides, herbicides, mining chemicals, medical supplies, cleaning products, industrial chemicals,  our social media experts develop data-driven strategies, create engaging content, and cultivate online communities, infrastructure, energy, water, the environment, engineers, architects, designers work, ">
+      
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+              
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+                        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+      
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      
+        <link href="css/templatemo-pod-talk.css" rel="stylesheet">
+      
+        <!-- Main CSS File -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <style>
+                    /* Loading Screen Styles */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f6f6f6, #b4c3e7); /* Navy Blue Gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out;
+        }
+        #loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 6px solid #00b4e1; /* Gold */
+            border-top: 6px solid transparent;
+            border-radius: 50%;
+            animation: spin 0.9s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #loading p {
+            color: #06c9ff; /* Gold */
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+            /* Custom styles for business colors */
+            .navbar {
+                background: linear-gradient(90deg, #1a2a44, #2e4372); /* Navy Blue Gradient */
+                padding: 1rem 2rem;
+            }
+            .navbar-brand img {
+                height: 40px;
+                width: auto;
+            }
+            .navbar-brand, .nav-link {
+                color: #d4af37 !important; /* Gold */
+                font-weight: 500;
+            }
+            .nav-link:hover, .nav-link:focus {
+                color: #ffffff !important;
+            }
+            .navbar-toggler {
+                border-color: #d4af37;
+            }
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23d4af37' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+            .navbar-nav .nav-item {
+                margin-right: 15px;
+            }
+            @media (max-width: 991.98px) {
+                .navbar-collapse {
+                    background: #1a2a44;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                }
+                .navbar-nav .nav-item {
+                    margin: 10px 0;
+                }
+            }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            margin: 0;
+            padding: 20px;
+            color: #1a2a44; /* Navy Blue */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #d4af37; /* Gold */
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .header h1 {
+            font-size: 28px;
+            color: #1a2a44;
+            margin: 0;
+        }
+        #searchBar {
+            width: 50%;
+            padding: 12px 20px;
+            margin-bottom: 25px;
+            font-size: 16px;
+            border: 2px solid #dfe6e9;
+            border-radius: 30px;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            background: #f7f9fb;
+        }
+        #searchBar:focus {
+            border-color: #d4af37; /* Gold */
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background: linear-gradient(90deg, #1a2a44, #2e4372); /* Navy Blue Gradient */
+            color: white;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        tr {
+            transition: background 0.3s;
+        }
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+        tr:hover {
+            background: #e6eef5;
+        }
+        .add-to-cart {
+            padding: 8px 15px;
+            background: #d4af37; /* Gold */
+            color: #1a2a44;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .add-to-cart:hover {
+            background: #c19b32;
+        }
+        input[type="number"] {
+            width: 60px;
+            padding: 6px;
+            border-radius: 5px;
+            border: 1px solid #dfe6e9;
+            margin-right: 10px;
+            background: #fff;
+            color: #1a2a44;
+        }
+        #cartBar {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(90deg, #1a2a44, #2e4372); /* Navy Blue Gradient */
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+        #cartBar:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        .cart-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .cart-buttons button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+            min-width: 120px;
+            background: #0dc7fa; /* Gold */
+            color: #1a2a44;
+        }
+        .cart-buttons button:hover {
+            background: #c19b32;
+        }
+        #emailModal, #cartModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.3s ease-out;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .modal-content h2 {
+            margin-top: 0;
+            color: #1a2a44;
+            font-size: 24px;
+            text-align: center;
+        }
+        .modal-content label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: 500;
+            color: #1a2a44;
+        }
+        .modal-content input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dfe6e9;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        .modal-content input:focus {
+            border-color: #d4af37; /* Gold */
+            outline: none;
+        }
+        .modal-buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        .modal-buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        #modalSubmit {
+            background: #06f963; /* Gold */
+            color: #1a2a44;
+        }
+        #modalSubmit:hover {
+            background: #fc0000;
+        }
+        #modalCancel, #cartClose {
+            background: #dfe6e9;
+            color: #1a2a44;
+        }
+        #modalCancel:hover, #cartClose:hover {
+            background: #ced4da;
+        }
+        #cartItems {
+            margin-top: 20px;
+        }
+        #cartItems ul {
+            list-style: none;
+            padding: 0;
+        }
+        #cartItems li {
+            padding: 10px 0;
+            border-bottom: 1px solid #dfe6e9;
+        }
+        #cartTotalPrice {
+            margin-top: 15px;
+            font-weight: 600;
+            color: #1a2a44;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead {
+                display: none;
+            }
+            tr {
+                margin-bottom: 15px;
+                border: 1px solid #dfe6e9;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                font-weight: 500;
+                color: #1a2a44;
+            }
+            .add-to-cart {
+                width: 100%;
+                margin-top: 10px;
+            }
+            #cartBar {
+                flex-direction: column;
+                width: 90%;
+                padding: 10px;
+                border-radius: 15px;
+            }
+            .cart-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            .cart-buttons button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <!-- Loading Screen -->
+        <div id="loading">
+            <div class="spinner"></div>
+        </div>
+    
+        <!-- Responsive Navigation Bar -->
+        <nav class="navbar navbar-expand-lg" style="border-radius: 15px;">
+            <div class="container-fluid">
+                <!-- Logo and Brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" alt="Gasdaniel Logo"> GASDANIEL COMPANY
+                </a>
+                <!-- Toggler for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    <div class="container">
+        <div class="header">
+            <h1>PRODUCT CATALOG</h1>
+        </div>
+        <input type="text" id="searchBar" placeholder="Search items...">
+        <table id="itemsTable">
+            <thead>
+                <tr>
+                    <th>Items</th>
+                    <th>Sale Price</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Data will be inserted via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <div id="cartBar">
+        <p>Total Items: <span id="cartCount">0</span></p>
+        <div class="cart-buttons">
+            <button id="sendCart">Send Us Your Order</button>
+            <button id="viewCart">View My Cart</button>
+        </div>
+    </div>
+    <div id="emailModal">
+        <div class="modal-content">
+            <h2>Send Order</h2>
+            <label for="senderName"><b>Please Fill Your Details before sending Your Order</b></label>
+            <label for="senderName">Name</label>
+            <input type="text" id="senderName" placeholder="Your Name" required>
+            <label for="senderContact">Contact (Phone)</label>
+            <input type="text" id="senderContact" placeholder="Your Phone Number" required>
+            <label for="senderOrg">Organization</label>
+            <input type="text" id="senderOrg" placeholder="Your Organization" required>
+            <label for="senderPlace">Place (Region and District)</label>
+            <input type="text" id="senderPlace" placeholder="Your Location" required>
+            <div class="modal-buttons">
+                <button id="modalSubmit">Send Now</button>
+                <button id="modalCancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="cartModal">
+        <div class="modal-content">
+            <h2>My Cart</h2>
+            <div id="cartItems"></div>
+            <p id="cartTotalPrice"></p>
+            <div class="modal-buttons">
+                <button id="cartClose">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const itemsData = [
+        { item:	"2-Phenoxyethanol ( 2-Phenoxyethanol 99% For Synthesis )",	price:75000 },
+{ item:	"4-Acetamidophenol (4-Acetamidophenol 98% Extra Pure )",	price:65000 },
+{ item:	"4-Chloro-m-cresol (4-Chloro-m-cresol 98% Extrapure )",	price:295000 },
+{ item:	"4-Chloro-m-Xylenol(PCMX)",	price:295000 },
+{ item:	"Acaccia Powder (Acacia Extrapure )",	price:100000 },
+{ item:	"Accucheck Strips",	price:0 },
+{ item:	"Acetic Acid (Acetic Acid Glacial 99.5% Extrapure )",	price:28000 },
+{ item:	"Acetiic acid",	price:68250 },
+{ item:	"Acetone",	price:165000 },
+{ item:	"Acetone 500mls ( Acetone 99% Extrapure )",	price:44000 },
+{ item:	"Acetonitrile2.5L",	price:90000 },
+{ item:	"Air Conditioners(AC)",	price:1396000 },
+{ item:	"Aluminium Coat",	price:2750000 },
+{ item:	"Amaranth Extra Pure (Amaranth Extra Pure )",	price:30000 },
+{ item:	"Ammeter 0-1A",	price:18000 },
+{ item:	"Ammeter 0-3A",	price:18000 },
+{ item:	"Ammeter 0-5A",	price:15000 },
+{ item:	"Ammeter Dual Range",	price:18000 },
+{ item:	"Ammonium Acetate",	price:25000 },
+{ item:	"Ammonium Bicarbonate 98.5% (Ammonium Bicarbonate 98.5% Extrapure )",	price:15000 },
+{ item:	"Ammonium carbonate",	price:19910 },
+{ item:	"Ammonium Chloride ( Ammonium Chloride 99% Extrapure )",	price:30000 },
+{ item:	"Ammonium Ferric Citrate (Ammonium Ferric Citrate (Brown) Extra Pure )",	price:110000 },
+{ item:	"Ammonium Ferric Sulphate ( Ammonium Ferric Sulphate Dodecahydrate 98% Extrapure )",	price:30000 },
+{ item:	"Ammonium Ferrous Sulphate (AMMONIUM FERROUS SULPHATE)",	price:15750 },
+{ item:	"Ammonium Hydroxide",	price:100000 },
+{ item:	"Ammonium Nitrate",	price:35560 },
+{ item:	"Ammonium Oxalate Monohydrate (Ammonium Oxalate Monohydrate 99% Extrapure )",	price:25000 },
+{ item:	"Ammonium Solution imported",	price:44000 },
+{ item:	"Ammonium Solution Local 2.5l",	price:44000 },
+{ item:	"Ammonium Sulphate",	price:13600 },
+{ item:	"Ammonium Sulphide",	price:75000 },
+{ item:	"Ammoxycillin caps 250gx100",	price:15000 },
+{ item:	"Angle Valve",	price:0 },
+{ item:	"AniseedOil ExtraPure( anise Oil (Aniseed Oil ExtraPure ( anise Oil) )",	price:66000 },
+{ item:	"Arachis Oil Extrapure ( Arachis Oil Extrapure )",	price:90000 },
+{ item:	"Asot Reagent",	price:59200 },
+{ item:	"Ball Valves 1/2 to 5/16",	price:0 },
+{ item:	"Bar Magnet",	price:15000 },
+{ item:	"Barium Chloride",	price:17750 },
+{ item:	"Barium Nitrate ( Barium Nitrate 98.5% Extrapure )",	price:17000 },
+{ item:	"Barium Sulphate",	price:15000 },
+{ item:	"Basic Fuchsin 85% DyeMicroscopy (Basic Fuchsin 85% Dye Content For Microscopy",	price:50000 },
+{ item:	"Beaker Glass",	price:4000 },
+{ item:	"Beaker Glass 1000Mls",	price:12000 },
+{ item:	"Beaker Glass 2000MLS",	price:17000 },
+{ item:	"Beaker Glass 250mls",	price:5000 },
+{ item:	"Beaker Glass 25mls",	price:5000 },
+{ item:	"Beaker Glass 500mls",	price:8000 },
+{ item:	"Beaker Glass 50mls",	price:3200 },
+{ item:	"Beaker Glass100mls",	price:4000 },
+{ item:	"Beaker Plastic 20mls",	price:4000 },
+{ item:	"Beaker Plastic 250mls",	price:5500 },
+{ item:	"Beaker Plastic 500mls",	price:4400 },
+{ item:	"Beaker Plastic100mls",	price:4800 },
+{ item:	"Beaker Pyrex 250mls",	price:11000 },
+{ item:	"Beaker Pyrex100mls",	price:7000 },
+{ item:	"Beaker Pyrex500mls",	price:17000 },
+{ item:	"Beaker Pyrex50mls",	price:5000 },
+{ item:	"Bed sheet (white)",	price:60000 },
+{ item:	"Bee Hive Shelves 3'",	price:3500 },
+{ item:	"Bees Wax Pure (White) (Bees Wax Pure (White) )",	price:30000 },
+{ item:	"Benedict Solution1litre",	price:15000 },
+{ item:	"Bentonite Powder Extra Pure (Bentonite Powder Extra Pure )",	price:34000 },
+{ item:	"Benzaldehyde 98.5% Extrapure (Benzaldehyde 98.5% Extrapure )",	price:55000 },
+{ item:	"Benzalkonium Chloride 50% w/v (Benzalkonium Chloride 50% w/v Aqueous Solution Ext...",	price:55000 },
+{ item:	"Benzoic Acid 99.5% (Benzoic Acid 99.5% Extrapure )",	price:30000 },
+{ item:	"Benzyl Benzoate 99% Extrapure ( Benzyl Benzoate 99% Extrapure )",	price:110000 },
+{ item:	"Bib tap pex 1/2'",	price:0 },
+{ item:	"Blue Pippete Tips",	price:20300 },
+{ item:	"Bobath ball",	price:65000 },
+{ item:	"Boiling tube brush",	price:0 },
+{ item:	"Boiling Tube Glass",	price:4000 },
+{ item:	"Boiling Tube Pyrex",	price:3500 },
+{ item:	"Borax (decahydrate) 99% (Borax (decahydrate) 99% Extrapure )",	price:30000 },
+{ item:	"Boric Acid (Powder) 99.5% (Boric Acid (Powder) 99.5% Extrapure )",	price:30000 },
+{ item:	"Bosch Hot Air Gun",	price:160000 },
+{ item:	"Boss Head 1",	price:5500 },
+{ item:	"Bp Machine",	price:65000 },
+{ item:	"Brilliant Green Indicator 95% (Brilliant Green Indicator 95% Dye Content )",	price:65000 },
+{ item:	"Bunsen Burner",	price:15000 },
+{ item:	"Burrete 10mls",	price:7500 },
+{ item:	"Burrete Acrylic",	price:30000 },
+{ item:	"Burrete Brush",	price:3400 },
+{ item:	"Burrete Rotaflow",	price:15000 },
+{ item:	"Burrete With Clip",	price:8000 },
+{ item:	"Butanedioic Acid/Succinic acid",	price:110000 },
+{ item:	"Calamine 98% (Calamine 98% Extrapure )",	price:100000 },
+{ item:	"Calamine Powder 500G local",	price:55000 },
+{ item:	"Calcium Carbonate",	price:13000 },
+{ item:	"Calcium chloride",	price:30000 },
+{ item:	"Calcium gluconate inj",	price:21000 },
+{ item:	"Calcium Hydroxide 95% (Calcium Hydroxide 95% Extrapure )",	price:15650 },
+{ item:	"Calcium Nitrate (Calcium Nitrate Tetrahydrate 98% Extrapure )",	price:19950 },
+{ item:	"Calcium Sulphate ( Calcium Sulphate Dihydrate 98% Extrapure )",	price:15000 },
+{ item:	"Calculator Simple",	price:25000 },
+{ item:	"Calicium Chrolide",	price:13500 },
+{ item:	"Camphor 95% Extrapure (Camphor 95% Extrapure )",	price:72000 },
+{ item:	"Carbopol 940 (Carbopol 940 (Carboxy vinyl polymer 940) )",	price:140000 },
+{ item:	"Carboxy MethylCelluloseSodium (Carboxy Methyl Cellulose Sodium Salt (High viscosi...",	price:100000 },
+{ item:	"Castor Oil Extrapure (Refined) (Castor Oil Extrapure (Refined) )",	price:34000 },
+{ item:	"Ceiling Fan Panasonic",	price:245000 },
+{ item:	"Cell Holder Double",	price:7000 },
+{ item:	"Cell Holder Single",	price:4300 },
+{ item:	"Centrifuge 4holes",	price:45000 },
+{ item:	"Centrifuge Tube 50MLS",	price:35000 },
+{ item:	"Centrifuge Tube15MLS P/50",	price:250000 },
+{ item:	"Cetostearyl Alcohol Extrapure (Cetostearyl Alcohol Extrapure )",	price:50000 },
+{ item:	"Cetriaxione 1gm",	price:5500 },
+{ item:	"Cetrimide 96% Extrapure ( Cetrimide 96% Extrapure )",	price:44000 },
+{ item:	"CHEMICALS",	price:0 },
+{ item:	"Chloroform 2.5litre",	price:65000 },
+{ item:	"Chloroform 500mls (Chloroform 99% For Synthesis )",	price:30000 },
+{ item:	"Chroloform Loba",	price:125000 },
+{ item:	"Chromium Chrolide",	price:79900 },
+{ item:	"Chromotographic Column",	price:540000 },
+{ item:	"Cinnamon Oil Extrapure (Cinnamon Oil Extrapure )",	price:75000 },
+{ item:	"Citric Acid Anhydrous 99.5% ( Citric Acid Anhydrous 99.5% Extrapure )",	price:16000 },
+{ item:	"Coal Tar",	price:75000 },
+{ item:	"Cobalt(II) Chrolide Test Paper",	price:15000 },
+{ item:	"Codliver Oil Liquid ( Codliver Oil Liquid )",	price:34000 },
+{ item:	"Combined therapeutic ultrasound (Machine)",	price:400000 },
+{ item:	"Concave Mirror",	price:0 },
+{ item:	"Conduit pipe 1/2",	price:4500 },
+{ item:	"Conical Flask 250ml",	price:5400 },
+{ item:	"Connecting Wire",	price:20000 },
+{ item:	"Control Valve",	price:80000 },
+{ item:	"Converging lens",	price:4500 },
+{ item:	"Copper (II) Nitrate Tri 95% (Copper (II) Nitrate Trihydrate 95% Extrapure )",	price:54400 },
+{ item:	"Copper (II) Sulphate Anhy 98% ( Copper (II) Sulphate Anhydrous 98% Extrapure )",	price:63000 },
+{ item:	"Copper (II) Sulphate pentahydra",	price:31300 },
+{ item:	"Copper Calorimeter",	price:16550 },
+{ item:	"Copper Chloride",	price:31300 },
+{ item:	"Copper fillings",	price:55000 },
+{ item:	"copper metal",	price:35000 },
+{ item:	"Copper Pipe",	price:115000 },
+{ item:	"Copper Wire",	price:25000 },
+{ item:	"Copper(11)Carbonate(basic)Extra (Copper(11)Carbonate(basic)Extra)",	price:52450 },
+{ item:	"Cork Bored",	price:10500 },
+{ item:	"Cork Rubber",	price:20002000 },
+{ item:	"Corner chair",	price:705000 },
+{ item:	"Costantine Wire 26SWG",	price:8500 },
+{ item:	"Costantine Wire 28SWG",	price:8500 },
+{ item:	"Costantine Wire 30SWG",	price:8500 },
+{ item:	"Cotton Gloves",	price:8500 },
+{ item:	"Cotton Thread",	price:4000 },
+{ item:	"Cotton wool",	price:30000 },
+{ item:	"Crip sedo 5/16",	price:1500 },
+{ item:	"Crocodile Clip",	price:1500 },
+{ item:	"Crucible With Lid",	price:3800 },
+{ item:	"Crystal Violet 88% (Crystal Violet 88% Dye Content For Microscopy )",	price:34000 },
+{ item:	"Crystal Violet Powder 25g",	price:62600 },
+{ item:	"Culture Bottle 250MLS",	price:55000 },
+{ item:	"Delivery Tube",	price:2500 },
+{ item:	"Delivery Tubee Per kg",	price:18000 },
+{ item:	"Density Bottle 50mls",	price:8500 },
+{ item:	"Density bottles 25mls",	price:4000 },
+{ item:	"Detergent Jik",	price:35000 },
+{ item:	"Detergent Soap",	price:35000 },
+{ item:	"Dextrose /Glucose",	price:15000 },
+{ item:	"Dextrose Agar",	price:295000 },
+{ item:	"Diazepam Injection",	price:4500 },
+{ item:	"DicloroMethane 2.5",	price:165000 },
+{ item:	"Diethyl Ether 98% For Synthesis (Diethyl Ether 98% For Synthesis Diethyl Ether 9...",	price:75000 },
+{ item:	"Digital Scale",	price:185000 },
+{ item:	"Digital Thermometer",	price:15000 },
+{ item:	"Disposable Syringe with needles",	price:600 },
+{ item:	"Dissecting Forceps",	price:20000 },
+{ item:	"Dissecting Kit Large Size",	price:15500 },
+{ item:	"Dissecting Tray 1",	price:13500 },
+{ item:	"Distilled Water",	price:31000 },
+{ item:	"Double Beam Balance",	price:810000 },
+{ item:	"Dropper Dispsable",	price:600 },
+{ item:	"Dropper With Teat",	price:15001 },
+{ item:	"Dropping Bottle 125mls clear",	price:5000 },
+{ item:	"Dry Cell AAA",	price:0 },
+{ item:	"Dry Cell ABCV",	price:1850 },
+{ item:	"Dry Cell DD",	price:1850 },
+{ item:	"Dumb bells (1/2kg,1kg,2kg,3kg,5kg)",	price:255000 },
+{ item:	"Edta vacutainer tubes 1*100",	price:38900 },
+{ item:	"Egg Albumine",	price:30000 },
+{ item:	"Egg Albumine 200g",	price:115000 },
+{ item:	"Egg Albumine 25gm",	price:20000 },
+{ item:	"Egg Albumine 500g",	price:118850 },
+{ item:	"Elbow 1 1/2'",	price:0 },
+{ item:	"Electronic Balance",	price:185000 },
+{ item:	"Emulsifying Wax local",	price:44000 },
+{ item:	"EmulSifying Wax Extra Pure (EmulSifying Wax Extra Pure )",	price:15000 },
+{ item:	"Eosin y Powder",	price:85000 },
+{ item:	"Ethanol",	price:165000 },
+{ item:	"Ethanol Local 2.5ltr",	price:35000 },
+{ item:	"Ethanol Local 5ltr",	price:75000 },
+{ item:	"Ethyl Acetate",	price:165000 },
+{ item:	"Ethylen Tetra Acetic Acid 99% (Ethylenediamine Tetra Acetic Acid Disodium Salt Di...",	price:44000 },
+{ item:	"Eucalyptus Oil ( Eucalyptus Oil )",	price:97000 },
+{ item:	"Eureca Can",	price:3500 },
+{ item:	"Evaporating Dish Glass",	price:15000 },
+{ item:	"Examination Gloves",	price:125000 },
+{ item:	"Face Shield",	price:500000 },
+{ item:	"Ferric Chloride Anhydrous",	price:23000 },
+{ item:	"Ferric Nitrate",	price:23000 },
+{ item:	"Ferric Sulphate Monohydrate (Ferric Sulphate Monohydrate Extrapure )",	price:23000 },
+{ item:	"Ferrous Chloride",	price:31300 },
+{ item:	"Ferrous Chrolide",	price:32000 },
+{ item:	"Ferrous Nitrate",	price:15000 },
+{ item:	"Ferrous Sulphate",	price:13600 },
+{ item:	"Ferrous Sulphide",	price:23000 },
+{ item:	"Fillament Lamp",	price:5000 },
+{ item:	"Filter Funel",	price:4100 },
+{ item:	"Filter Funnel",	price:1500 },
+{ item:	"Filter Paper Watman 12.5cm",	price:12400 },
+{ item:	"Filter Paper Watman 15cm",	price:15000 },
+{ item:	"Flat Bottomed flask",	price:9500 },
+{ item:	"Flat Bottomed Flask 250mls",	price:9500 },
+{ item:	"Forcept",	price:4500 },
+{ item:	"Formalin 0.5ltr",	price:44000 },
+{ item:	"Formaline Solution 37-41% (Formaline Solution 37-41% w/v Extrapure )",	price:97000 },
+{ item:	"French Chalk Powder Extrapure (French Chalk Powder Extrapure )",	price:48500 },
+{ item:	"G Clamp",	price:13500 },
+{ item:	"Galvanometer Zero Centered",	price:14500 },
+{ item:	"Gas Cylinder 15KG",	price:217500 },
+{ item:	"Gas Elbow joint 5/16",	price:18500 },
+{ item:	"Gas Jar",	price:16500 },
+{ item:	"Gas Jar cover",	price:4500 },
+{ item:	"Gas socket 5/16",	price:18500 },
+{ item:	"Gas Tank 30kg",	price:123000 },
+{ item:	"Gas Tap double",	price:59500 },
+{ item:	"Gas Tap Single",	price:54500 },
+{ item:	"Gas Tap two Way",	price:59500 },
+{ item:	"Gas tap Two way 5/16",	price:54000 },
+{ item:	"GasTee joint 5/16",	price:18500 },
+{ item:	"Gate valve 1/2",	price:15800 },
+{ item:	"Gauze Large",	price:59500 },
+{ item:	"Gauze.",	price:66500 },
+{ item:	"Gelatin Powder For Bacteriology (Gelatin Powder For Bacteriology )",	price:48500 },
+{ item:	"Gels",	price:35000 },
+{ item:	"Gentian violet 25g",	price:59200 },
+{ item:	"Giemsa Stain sock solution 500m",	price:76200 },
+{ item:	"Glass Block 75x50x12mm",	price:5400 },
+{ item:	"Glass Block 75x50x15mm",	price:5400 },
+{ item:	"Glass Block Large",	price:5000 },
+{ item:	"Glass Prism 38x38mm",	price:5420 },
+{ item:	"Glass Prism 50x50mm",	price:7000 },
+{ item:	"Glass Reagent Spray Bottle",	price:522000 },
+{ item:	"Gloves Acid Proof",	price:11000 },
+{ item:	"Glucose Ar",	price:245000 },
+{ item:	"Glucose Plus",	price:64000 },
+{ item:	"Glycerol 98% Extrapure ( Glycerol 98% Extrapure )",	price:30000 },
+{ item:	"Golori Burrete",	price:2500 },
+{ item:	"Gram Iodimne 2,5ltr",	price:54800 },
+{ item:	"Gum Tragacanth (Gum Tragacanth )",	price:100000 },
+{ item:	"Half Metre Ruler",	price:2700 },
+{ item:	"Hand Lens",	price:2700 },
+{ item:	"Harris Hematoxyline Powder 50g",	price:565000 },
+{ item:	"HCG Test Strips",	price:18600 },
+{ item:	"HEP b surface AG",	price:54800 },
+{ item:	"Herical Spring",	price:3500 },
+{ item:	"Histology blunt forceps",	price:10120 },
+{ item:	"Histology hot plate",	price:435000 },
+{ item:	"Histology slide mounting medal",	price:145000 },
+{ item:	"Histology straining buckets/dis",	price:185300 },
+{ item:	"Histology water bath(mh3517)",	price:605000 },
+{ item:	"Horse clamp",	price:2500 },
+{ item:	"Hose Pipe",	price:102000 },
+{ item:	"Hose pipe 10mm",	price:110000 },
+{ item:	"Hose Pipe 50m",	price:123000 },
+{ item:	"Hospital Beds",	price:1950000 },
+{ item:	"Hot Plate",	price:297000 },
+{ item:	"Hydrochloric Acid 35% Extrapure (Hydrochloric Acid 35% Extrapure )",	price:48100 },
+{ item:	"Hydrocoleter",	price:1190000 },
+{ item:	"Hydrocortisone Acetate 97% ( Hydrocortisone Acetate 97% Extrapure )",	price:100000 },
+{ item:	"Hydrogen Peroxide",	price:49000 },
+{ item:	"Hydrogen Sulphide",	price:43000 },
+{ item:	"Hydrometee",	price:36000 },
+{ item:	"Illuminate Object",	price:8500 },
+{ item:	"Indicator Papers-(pH 1.0-14.0) ( Indicator Papers - Full Range (pH 1.0 - 14.0) )",	price:15000 },
+{ item:	"Iodine (Resublimed) 98.5% (Iodine (Resublimed) 98.5% Extrapure )",	price:54500 },
+{ item:	"Iodine Solution 1ltr",	price:15000 },
+{ item:	"Ips 3/4'x1/2'",	price:0 },
+{ item:	"Ips Bush 3/4 to 1/2",	price:3700 },
+{ item:	"Ips Elbow 1/2",	price:25002500 },
+{ item:	"Ips Elbow 3/4",	price:15001500 },
+{ item:	"Ips Nipple 1/2",	price:25002500 },
+{ item:	"Ips Pipe 1/2",	price:14800 },
+{ item:	"Ips Socket 1/2",	price:3200 },
+{ item:	"Ips Tee 1 1/2",	price:0 },
+{ item:	"Ips Union 1/2",	price:4400 },
+{ item:	"Ips union 3/4",	price:0 },
+{ item:	"IpsTee 1/2",	price:3300 },
+{ item:	"Iso Butanol",	price:84000 },
+{ item:	"Jockey Pencil",	price:3800 },
+{ item:	"Kaolin Extrapure (Heavy) (Kaolin Extrapure (Heavy) )",	price:43000 },
+{ item:	"Katamine Injection",	price:35000 },
+{ item:	"Kitchen Sink",	price:218000 },
+{ item:	"Kn95 Mask",	price:4500 },
+{ item:	"Knee strengthen machine",	price:2240000 },
+{ item:	"Knife Edge",	price:4000 },
+{ item:	"Kovacs Reagent",	price:59900 },
+{ item:	"L-Ascorbic Acid 99% Extrapure ( L-Ascorbic Acid 99% Extrapure )",	price:23000 },
+{ item:	"Lable Large",	price:3200 },
+{ item:	"Lable Small",	price:3200 },
+{ item:	"Laboratory Coat",	price:35000 },
+{ item:	"Laboratory Sink",	price:65000 },
+{ item:	"Lactose Monohydrate Extrapure",	price:30000 },
+{ item:	"Lanolin Anhydrous Extra Pure ( Lanolin Anhydrous Extra Pure )",	price:111000 },
+{ item:	"Lead Acetate",	price:44950 },
+{ item:	"Lead Carbonate 98% Extrapure",	price:35000 },
+{ item:	"Lead Chloride",	price:35500 },
+{ item:	"Lead Nitrate 99% Extrapure ( Lead Nitrate 99% Extrapure )",	price:21000 },
+{ item:	"Lemon Oil Extrapure ( Lemon Oil Extrapure )",	price:73000 },
+{ item:	"Lignocaine inj 30ml",	price:15000 },
+{ item:	"Lignocaine inj 50mls",	price:17000 },
+{ item:	"Lime Waterr",	price:15000 },
+{ item:	"Linsed Oil Extrapure",	price:54500 },
+{ item:	"Liquid Parafin",	price:75500 },
+{ item:	"Litmus Paper Blue",	price:2900 },
+{ item:	"Litmus Paper Red",	price:2900 },
+{ item:	"Magic pipe 1 1/2",	price:3800 },
+{ item:	"Magnesium Carbonate Basic 40% ( Magnesium Carbonate Basic Light 40% Extrapure )",	price:34500 },
+{ item:	"Magnesium Chloride Hexa 98% ( Magnesium Chloride Hexahydrate 98% Extrapure )",	price:20000 },
+{ item:	"Magnesium Hydroxide 95% Extrapu",	price:30000 },
+{ item:	"Magnesium Metal Turning",	price:54500 },
+{ item:	"Magnesium Oxide",	price:34000 },
+{ item:	"Magnesium Ribbon",	price:6500 },
+{ item:	"Magnesium Sulphate Hepta 99% ( Magnesium Sulphate Heptahydrate 99% Extrapure )",	price:15000 },
+{ item:	"Magnesium sulphate inj 50%10",	price:20000 },
+{ item:	"Magnesium Trisilicate Hydrate P",	price:116000 },
+{ item:	"Magnetic Stirrer",	price:215000 },
+{ item:	"Magnetic Compas",	price:3850 },
+{ item:	"Magnetic stirer with magnets on",	price:215000 },
+{ item:	"Malachite Green 25g",	price:77200 },
+{ item:	"Male connector 3/4'",	price:0 },
+{ item:	"Manganise IV Oxide",	price:35500 },
+{ item:	"Masking Tape",	price:4000 },
+{ item:	"Measuring Cylinder 1000mls",	price:30000 },
+{ item:	"Measuring Cylinder 100mls",	price:6500 },
+{ item:	"Measuring Cylinder 10mls",	price:3800 },
+{ item:	"Measuring Cylinder 20mls",	price:5000 },
+{ item:	"Measuring Cylinder 25mls",	price:4000 },
+{ item:	"Measuring Cylinder 500mls",	price:13500 },
+{ item:	"Measuring Cylinder 50ml Plastic",	price:5000 },
+{ item:	"Measuring Cylinder 50mls",	price:4400 },
+{ item:	"Measuring Cylinder Plastic 25ml",	price:5000 },
+{ item:	"Measuring Cylinder Plastic100ml",	price:7500 },
+{ item:	"Media Culture Bottle Amber 1000",	price:54500 },
+{ item:	"Media Culture Bottle Amber 100m",	price:35000 },
+{ item:	"Media Culture Bottle Amber 2000",	price:100000 },
+{ item:	"Media Culture Bottle Amber 500m",	price:49200 },
+{ item:	"MEDICAL EQUIPMENTS",	price:0 },
+{ item:	"Mentha Pepprita Oil Extrapure ( Mentha Pepprita Oil Extrapure (Perpermint oil) )",	price:185000 },
+{ item:	"Mercuric chloride 500g",	price:275000 },
+{ item:	"Mercuric oxide 50g",	price:295000 },
+{ item:	"Mercury thermometer",	price:4400 },
+{ item:	"Metalic Rods",	price:7500 },
+{ item:	"Metallic Rods",	price:7500 },
+{ item:	"Methanol",	price:17500 },
+{ item:	"Methanol 99.5% Extrapure",	price:30000 },
+{ item:	"Methyl-p-hydroxybenzoate 99% Ex",	price:95000 },
+{ item:	"Methyl Cellulose(highviscosity ( Methyl Cellulose (high viscosity) )",	price:150000 },
+{ item:	"Methyl Orange 500mls",	price:15000 },
+{ item:	"Methyl Orange Powder",	price:13600 },
+{ item:	"Methyl Salicylate 99% For Synth",	price:110000 },
+{ item:	"Methylated Spirit",	price:54500 },
+{ item:	"Methylene Blue Powder 25g",	price:77200 },
+{ item:	"Metre Bridge",	price:34000 },
+{ item:	"Metre Ruller Mdf",	price:4000 },
+{ item:	"Metre Ruller Wooden",	price:6500 },
+{ item:	"Micro Pippete Blue P/500",	price:150000 },
+{ item:	"Micro Pippete Yellow P/1000",	price:185000 },
+{ item:	"Micrometer Screw Gauge",	price:13500 },
+{ item:	"Micrometer Sg Digital",	price:185000 },
+{ item:	"Microscope Slides Frosted",	price:20000 },
+{ item:	"Model Ear",	price:20000 },
+{ item:	"Model Extration",	price:20000 },
+{ item:	"Model Eye",	price:17000 },
+{ item:	"Model Heart",	price:17000 },
+{ item:	"Model Kidney",	price:20000 },
+{ item:	"Model of human skeleton",	price:295000 },
+{ item:	"Model Reproductive Female",	price:30000 },
+{ item:	"Model Reproductive Male",	price:30000 },
+{ item:	"Model Respiratory",	price:30000 },
+{ item:	"Model Skin",	price:30000 },
+{ item:	"Mortal&Pestle 3''",	price:15000 },
+{ item:	"Mortar And Pestle 4''",	price:5200 },
+{ item:	"Mounting Needles",	price:2500 },
+{ item:	"MRDT",	price:54800 },
+{ item:	"Multifunctional Office Paper",	price:73800 },
+{ item:	"Multistyick",	price:43600 },
+{ item:	"N Hexane 2.5",	price:170000 },
+{ item:	"Neutral Red Powder 25g",	price:77200 },
+{ item:	"NGT 10",	price:4500 },
+{ item:	"NGT G18",	price:4500 },
+{ item:	"Nichrome Wire 24swg",	price:7500 },
+{ item:	"Nichrome Wire 26SWG",	price:9000 },
+{ item:	"Nichrome Wire 28SWG",	price:9000 },
+{ item:	"Nichrome Wire 30SWG",	price:9000 },
+{ item:	"Nipple G.S 3/4",	price:3700 },
+{ item:	"Nitric Acid 69% Extrapure",	price:65000 },
+{ item:	"Non-Trap 1 1/2",	price:12500 },
+{ item:	"o-Cresol 98% For Synthesis ( o-Cresol 98% For Synthesis )",	price:355000 },
+{ item:	"Oil Immersion type A 10-15ml",	price:30400 },
+{ item:	"Oleic Acid Extrapure",	price:122000 },
+{ item:	"Optical Pin 1",	price:5000 },
+{ item:	"Oxalic Acid",	price:18850 },
+{ item:	"P-Trap 4",	price:5250 },
+{ item:	"Pair of Cork Pads",	price:4000 },
+{ item:	"Pair Of Scissors",	price:15000 },
+{ item:	"Paracetamol blister 10x10s",	price:11000 },
+{ item:	"Paraffin Liquid Colouries,Heav ( Paraffin Liquid Colouries, Heavy )",	price:35000 },
+{ item:	"Paraffin Wax Pellets 58-60°C",	price:15000 },
+{ item:	"Paraller bar",	price:546000 },
+{ item:	"Patella Hammer Tiangulla",	price:43500 },
+{ item:	"Pathology mounting slide p/50",	price:20000 },
+{ item:	"Pauster Pippete Glass",	price:245000 },
+{ item:	"Pauster Pippete Plastic P/250",	price:100000 },
+{ item:	"PC Klean pH (2-5% Solution) ( PC Klean (Neutral) Cleaning Solution pH (2-5% Solut...",	price:81000 },
+{ item:	"Pen Torch (PEN TORCH)",	price:15000 },
+{ item:	"Pendulum Bob",	price:2900 },
+{ item:	"Perchloroethylene 99% Extrapur ( Perchloroethylene 99% Extrapure )",	price:75000 },
+{ item:	"Petri Dish Glass",	price:5000 },
+{ item:	"Petri Dish plastic",	price:2500 },
+{ item:	"Petroleum Ether 2.5",	price:170000 },
+{ item:	"Ph Meter",	price:2550000 },
+{ item:	"Phenobarbitone Injection",	price:35000 },
+{ item:	"Phenol 90% w/w Solution in Wate (Phenol 90% w/w Solution in Wate)",	price:92000 },
+{ item:	"Phenol Crystals 99% Extrapure (Phenol Crystals 99% Extrapure)",	price:112000 },
+{ item:	"Phenolphthalein Indicator 0.5L",	price:15000 },
+{ item:	"Phenolphthalein Powder",	price:15000 },
+{ item:	"Phenyl Mercuric Nitrate 99% For (Phenyl Mercuric Nitrate 99% For Synthesis)",	price:395000 },
+{ item:	"Pippete Filler 3 Ways",	price:8500 },
+{ item:	"Pippete 10mls",	price:59500 },
+{ item:	"Pippete 20mls",	price:4400 },
+{ item:	"Pippete 25mls",	price:5150 },
+{ item:	"Pippete 5mls",	price:4000 },
+{ item:	"Plain Mirror",	price:2500 },
+{ item:	"Plain Mirror with stand",	price:0 },
+{ item:	"Plain vacutainer tubes 1*100",	price:47000 },
+{ item:	"Plastic And Ground Glass Stoppe",	price:15000 },
+{ item:	"Plastic test tube 5-7ml",	price:83500 },
+{ item:	"Plasticinee",	price:15000 },
+{ item:	"Plug Key Single",	price:5500 },
+{ item:	"Poly male 3/4",	price:4900 },
+{ item:	"Poly pipe 3/4",	price:24502450 },
+{ item:	"Poly Tee 3/4 Class B",	price:5900 },
+{ item:	"Polycarbonate Mice Food Cage",	price:275000 },
+{ item:	"Polycarbonate Rat Food Cage",	price:365000 },
+{ item:	"Polyvinyl Pyrrolldone K30 For S (Polyvinyl Pyrrolldone K30 For Synthesis)",	price:97000 },
+{ item:	"Potassium Carbonate",	price:20000 },
+{ item:	"Potassium Chlorate",	price:55000 },
+{ item:	"Potassium Chromate",	price:43500 },
+{ item:	"Potassium Dichromate",	price:45950 },
+{ item:	"Potassium Ferocynide",	price:45950 },
+{ item:	"Potassium Ferricyanide",	price:49500 },
+{ item:	"Potassium Hydroxide Pellets 85% (Potassium Hydroxide Pellets 85%)",	price:19950 },
+{ item:	"Potassium Iodide 100gm (Potassium Iodide 99% Extrapure)",	price:65000 },
+{ item:	"Potassium Iodide 500gms",	price:185000 },
+{ item:	"Potassium Permanganate",	price:35560 },
+{ item:	"Potentiometer",	price:34000 },
+{ item:	"Pp Sink",	price:54500 },
+{ item:	"Proflavin Hemisulphate Dihydrat (Proflavin Hemisulphate Dihydrat)",	price:15000 },
+{ item:	"Propyl-P-Hydroxy Benzoate99.5% ( Propyl-P-Hydroxy Benzoate 99.5% Extrapure )",	price:10000 },
+{ item:	"Propylene Glycol 99% Extrapure (Propylene Glycol 99% Extrapure)",	price:44500 },
+{ item:	"Pulley Single Wheel",	price:10500 },
+{ item:	"Pvc elbow 1 1/2",	price:4000 },
+{ item:	"Pvc Elbow 1 1/4 Class B",	price:3800 },
+{ item:	"Pvc pipe 1 1/2",	price:0 },
+{ item:	"Pvc Pipe 1 1/4",	price:19900 },
+{ item:	"Pvc Pipe 1 1/4 Class B",	price:45500 },
+{ item:	"Pvc Plug 1 1/4 Class B",	price:2850 },
+{ item:	"Pvc Tee 1 1/4 Class B",	price:3900 },
+{ item:	"Quickfi Adapter Stopcock Shape",	price:54500 },
+{ item:	"Quickfit Adapter Expansion Cone",	price:54500 },
+{ item:	"Quickfit Adapter Receiver,Vacuu",	price:54500 },
+{ item:	"Quickfit Adapter Splash",	price:54500 },
+{ item:	"Quickfit Adapter Stopcock shape",	price:54500 },
+{ item:	"Quickfit Adapters Reduction Con",	price:54500 },
+{ item:	"Reagent Bottle 125Ml(Amber)",	price:6500 },
+{ item:	"Reagent Bottle 250ml(Amber)",	price:7000 },
+{ item:	"Reagent Bottle 30ml(Amber)",	price:4000 },
+{ item:	"Reagent Bottle 500ml(Amber)",	price:8500 },
+{ item:	"Reagent Bottle 60ml(Amber)",	price:2900 },
+{ item:	"Reagent Bottle Brown",	price:6500 },
+{ item:	"Reagent Bottle Clear",	price:6500 },
+{ item:	"Reagent Bottle Clear 1000mls",	price:35000 },
+{ item:	"Reagent Bottle Clear 125mls",	price:5000 },
+{ item:	"Reagent Bottle Clear 250mls",	price:7500 },
+{ item:	"Reagent Bottle125mls Amber",	price:4000 },
+{ item:	"Real Time PCR System,PRC-Q96",	price:34450 },
+{ item:	"Reduce 1/2 to 5/16",	price:0 },
+{ item:	"Regulator",	price:75000 },
+{ item:	"Reostant 0-200 Ohms",	price:18000 },
+{ item:	"Resistace Box 0-50",	price:44500 },
+{ item:	"Resistance Box 0-10 Ohms",	price:37000 },
+{ item:	"Resistance Box 0-100",	price:43500 },
+{ item:	"Resorcinol 99% Extrapure ( Resorcinol 99% Extrapure )",	price:72000 },
+{ item:	"Retort Base",	price:11000 },
+{ item:	"Retort Clamp",	price:7500 },
+{ item:	"Retort Rod",	price:11000 },
+{ item:	"Rheumatoid Factor",	price:54800 },
+{ item:	"Rosemary Oil Extrapure ( Rosemary Oil Extrapure )",	price:150000 },
+{ item:	"RPR Reagent",	price:44600 },
+{ item:	"Rubber Tubing Per Metre",	price:47750 },
+{ item:	"Sabouraud Dextrose Broth",	price:29500 },
+{ item:	"Safety Google",	price:10500 },
+{ item:	"Salicylic Acid 99% Extrapure ( Salicylic Acid 99% Extrapure )",	price:44500 },
+{ item:	"Sanitary Vending Machine (AUTOMATIC SANITARY VENDING MACHINE(40 NAPKIN CAP",	price:0 },
+{ item:	"Sanitary Vending Machine( 20-25 (AUTOMATIC SANITARY VENDING MACHINE (20-25 NA",	price:0 },
+{ item:	"Scapel",	price:20000 },
+{ item:	"Schott Duran Bottle",	price:54500 },
+{ item:	"Schott Duran Bottle 250",	price:4500 },
+{ item:	"Schott Duran Bottle 500mls",	price:54500 },
+{ item:	"Scouper",	price:4000 },
+{ item:	"Semi Circular Block",	price:6500 },
+{ item:	"Separating Funnel 1000mls",	price:105000 },
+{ item:	"Separating Funnel 250mls",	price:15000 },
+{ item:	"Separating Funnel 500mls",	price:36000 },
+{ item:	"Sephadex 50gm",	price:1880000 },
+{ item:	"Shoulder wheel",	price:135000 },
+{ item:	"Sieve",	price:44500 },
+{ item:	"Silica crucible (Silica Crucible,Height 680mm,Top Dia 445mm, Bottom 225 ,Weight 7...",	price:5461 },
+{ item:	"Silica Gel",	price:44500 },
+{ item:	"Silica Gel 25kg",	price:313000 },
+{ item:	"Silver Nitrate",	price:44500 },
+{ item:	"Silver Nitrate Ar",	price:295000 },
+{ item:	"Skeleton",	price:97000 },
+{ item:	"Slotted Mass 100gX5 Imported",	price:17000 },
+{ item:	"Slotted Mass 20gX10 Imported",	price:16400 },
+{ item:	"Slotted Mass 50gX10 Imported",	price:17000 },
+{ item:	"Slotted Mass10gX10 Imported",	price:16500 },
+{ item:	"Small Animal Cage",	price:375000 },
+{ item:	"Sodium Acetate",	price:18850 },
+{ item:	"Sodium Bicarbonate",	price:12520 },
+{ item:	"Sodium Carbonate Anhydrous",	price:13800 },
+{ item:	"Sodium Carbonate Deca",	price:36560 },
+{ item:	"Sodium Chloride 99.5% Extrapure (Sodium Chloride 99.5% Extrapure)",	price:11000 },
+{ item:	"sodium citrate dihydrate",	price:0 },
+{ item:	"Sodium Hydroxide",	price:16715 },
+{ item:	"Sodium hypochlorite solution",	price:22500 },
+{ item:	"Sodium Lauryl Sulphate Powder 8 (Sodium Lauryl Sulphate Powder 85% Extrapure)",	price:44500 },
+{ item:	"Sodium Metabisulphite 96.5% ( Sodium Metabisulphite 96.5% Extrapure )",	price:36000 },
+{ item:	"Sodium Metal",	price:17500 },
+{ item:	"Sodium Oxalate",	price:23400 },
+{ item:	"Sodium PhosphateDibasic Anhydr (Sodium Phosphate Dibasic Anhydrous 98%)",	price:50500 },
+{ item:	"Sodium Sulphate Anhydrous 99% E (Sodium Sulphate Anhydrous 99% Extrapure)",	price:18500 },
+{ item:	"Sodium Thiosulphate penta (SODIUM THIOSULPHATE penta )",	price:15650 },
+{ item:	"Sodium Thiosulphate Anhydrous",	price:15650 },
+{ item:	"SodiumPhosphateDibasicAnhy 99% ( Sodium Phosphate Dibasic Anhydrous 99% AR )",	price:59500 },
+{ item:	"Softy Body",	price:10500 },
+{ item:	"Spatula",	price:16001600 },
+{ item:	"Specimen Bottle",	price:31000 },
+{ item:	"Spiral Spring",	price:2500 },
+{ item:	"Spirit Lamp Glass",	price:6500 },
+{ item:	"Spotling Tiles",	price:4400 },
+{ item:	"Spray Bottle",	price:31000 },
+{ item:	"Spring Balance",	price:5500 },
+{ item:	"Standard Mass 50g Imported",	price:4400 },
+{ item:	"Standard Mass 100g Imported",	price:4800 },
+{ item:	"Standard Mass 10g Imported",	price:2700 },
+{ item:	"Standard Mass 200g Imported",	price:10000 },
+{ item:	"Standard Mass 20g Imported",	price:4000 },
+{ item:	"Standard Resistor 1 Ohm",	price:2700 },
+{ item:	"Standard Resistor 10ohms",	price:3300 },
+{ item:	"Standard Resistor 2 Ohms",	price:2700 },
+{ item:	"Standard Resistor 3 Ohms",	price:2700 },
+{ item:	"Standard Resistor 4 Ohms",	price:2700 },
+{ item:	"Standard Resistor 5 Ohms",	price:2700 },
+{ item:	"Standard Resistor 6 Ohms",	price:2800 },
+{ item:	"Starch",	price:32500 },
+{ item:	"Starch Maize (Corn) Extra Pure (Starch Maize (Corn) Extra Pure)",	price:21500 },
+{ item:	"Stationary bicycle",	price:72300 },
+{ item:	"Sterile Gloves",	price:2500 },
+{ item:	"Stethoscope",	price:30000 },
+{ item:	"Stirring Rod",	price:1500 },
+{ item:	"Stop Watch Digital",	price:6500 },
+{ item:	"Stop Watch Electronic Proffesio",	price:10000 },
+{ item:	"Stop Watch Zsd-009 With Compas",	price:7165 },
+{ item:	"Student Microscope",	price:195000 },
+{ item:	"Succinic Acid /Butanedioic (Succinic Acid 99% For Synthesis)",	price:39000 },
+{ item:	"Sucrose Extrapure (Sucrose Extrapure)",	price:15650 },
+{ item:	"Sudan iii Powder",	price:15000 },
+{ item:	"Sudan iii Solution 500mls",	price:15000 },
+{ item:	"Sulphur Powder",	price:17000 },
+{ item:	"Sulphuric Acid 98% Extrapure (Sulphuric Acid 98% Extrapure)",	price:48500 },
+{ item:	"Sulphuric acide",	price:97000 },
+{ item:	"Sunction Catheter # 10",	price:4000 },
+{ item:	"Sunction Catheter # 18",	price:4000 },
+{ item:	"Superscript III First strand (Superscript III First strand synthesis system for R...",	price:0 },
+{ item:	"Superscript III one step RT_PCR (Superscript III one step RT_PCR with Platinum Ta...",	price:0 },
+{ item:	"Surgical Blades",	price:31000 },
+{ item:	"Surgical Gloves",	price:20000 },
+{ item:	"Swan neck water tap",	price:71000 },
+{ item:	"Syringe 20cc",	price:2050 },
+{ item:	"Syringe 50mls",	price:4000 },
+{ item:	"Syringe 5mls P/100",	price:66000 },
+{ item:	"Syringe Auto Filter P/100",	price:295000 },
+{ item:	"Syringes 2cc",	price:16900 },
+{ item:	"Syringes 5cc",	price:33200 },
+{ item:	"Tannic Acid Powder Extrapure (Tannic Acid Powder Extrapure)",	price:97500 },
+{ item:	"Tapping Key Double",	price:6500 },
+{ item:	"Tapping Key Single",	price:5000 },
+{ item:	"Tartrazine AR For Microscopy (Tartrazine AR For Microscopy)",	price:59500 },
+{ item:	"Tee connector 3/4'",	price:0 },
+{ item:	"Tee G.S 3/4",	price:3700 },
+{ item:	"Tee Joiint",	price:0 },
+{ item:	"TENS",	price:495000 },
+{ item:	"Terpineol Anhydrous 80% Extra P (Terpineol Anhydrous 80% Extra Pure (Mixture of I...",	price:115000 },
+{ item:	"Test Tube Rack Plastic",	price:4000 },
+{ item:	"Test Tube Brush",	price:1500 },
+{ item:	"Test Tube Holder",	price:2500 },
+{ item:	"Test Tube Pyrex",	price:20002000 },
+{ item:	"Test Tube Rack 6 Holes",	price:4000 },
+{ item:	"Test tube Soda Glass",	price:1500 },
+{ item:	"Therapeutic ultrasound machine",	price:3900000 },
+{ item:	"Thermometer Alcohol",	price:4200 },
+{ item:	"Thermometer Clinical",	price:4500 },
+{ item:	"Thistle funnel",	price:7500 },
+{ item:	"Thread seal tap",	price:14801480 },
+{ item:	"Thread Seal Tape",	price:2618 },
+{ item:	"Thread tape",	price:0 },
+{ item:	"Thymol Crystal 99% Extrapure",	price:31000 },
+{ item:	"Tic Alluminium Plate Silica Gel",	price:778500 },
+{ item:	"Tilting table",	price:3950000 },
+{ item:	"Tissue",	price:3500 },
+{ item:	"Tlv Uv Cabinet",	price:3750000 },
+{ item:	"Toluene 2.5",	price:172000 },
+{ item:	"Torniquet",	price:12000 },
+{ item:	"Traction bed",	price:1750000 },
+{ item:	"tri-Potassium Citrate Mono 99% ( tri-Potassium Citrate Monohydrate 99% Extrapure )",	price:49500 },
+{ item:	"tri-Sodium Orthophosphate Dodec (tri-Sodium Orthophosphate Dodecahydrate 98% Extr...",	price:44500 },
+{ item:	"Tri Sodium Citrate Local Pack",	price:31000 },
+{ item:	"Tripod Stand",	price:9500 },
+{ item:	"Trough",	price:21500 },
+{ item:	"Trough Glass",	price:20000 },
+{ item:	"Turpentine Oil Pure (Turpentine Oil Pure)",	price:115000 },
+{ item:	"Tween® -20 Extrapure ( Tween® -20 Extrapure (Polyoxyethylene (20) Sorbitan Monola...",	price:49500 },
+{ item:	"Tween® -80 Extrapure ( Tween® -80 Extrapure (Polyoxyethylene (20) Sorbitan Monool...",	price:107000 },
+{ item:	"Typhoid IGM/IGG",	price:107000 },
+{ item:	"U-Shape Magnet 3",	price:14500 },
+{ item:	"Universal Bottle 28mls",	price:8500 },
+{ item:	"Universal indicator",	price:36500 },
+{ item:	"Urea",	price:31000 },
+{ item:	"Vacutainer needles",	price:47500 },
+{ item:	"Vaseline white (Vaseline white)",	price:36500 },
+{ item:	"Venier Caliper",	price:7500 },
+{ item:	"Venier Caliper Digital",	price:76000 },
+{ item:	"Voltimeter 0-2",	price:17500 },
+{ item:	"Voltimeter 0-3",	price:17500 },
+{ item:	"Voltimeter 0-5",	price:15000 },
+{ item:	"Voltimeter Dual Range 0-3/5V",	price:0 },
+{ item:	"Volumetric Flask 100mls",	price:7500 },
+{ item:	"volumetric flask 2000mls",	price:36500 },
+{ item:	"Volumetric Flask 500mls",	price:16500 },
+{ item:	"Waling Frame",	price:118000 },
+{ item:	"Wall Mirroor",	price:31000 },
+{ item:	"Wall Mirror",	price:31000 },
+{ item:	"Wash Bottle",	price:5000 },
+{ item:	"WASH BOTTLEE",	price:5800 },
+{ item:	"watch",	price:126000 },
+{ item:	"Watch Glass",	price:3000 },
+{ item:	"Water bath",	price:20000 },
+{ item:	"Water Tap Medium",	price:66000 },
+{ item:	"West 1.5",	price:11000 },
+{ item:	"Wire Gauze",	price:2500 },
+{ item:	"Xylazine Injection",	price:36500 },
+{ item:	"Yellow Pippete Tips",	price:20300 },
+{ item:	"Yellow Tips",	price:44500 },
+{ item:	"Zinc Carbonate Basic Extrapure (Zinc Carbonate Basic Extrapure)",	price:21500 },
+{ item:	"Zinc Chloride",	price:31500 },
+{ item:	"Zinc Chloride Dry 97% Extrapure (Zinc Chloride Dry 97% Extrapure)",	price:32700 },
+{ item:	"Zinc Metal",	price:0 },
+{ item:	"Zinc Nitrate",	price:267010 },
+{ item:	"Zinc Oxide 99% Extrapure ( Zinc Oxide 99% Extrapure )",	price:39500 },
+{ item:	"Zinc Stearate Extrapure (Zinc Stearate Extrapure)",	price:54500 },
+{ item:	"Zinc Sulphate Heptahydrate 99% (Zinc Sulphate Heptahydrate 99% Extrapure)",	price:17850 },
+        ];
+
+        let cart = [];
+
+        // Populate table
+        function populateTable(data) {
+            const tableBody = document.getElementById('tableBody');
+            tableBody.innerHTML = '';
+            data.forEach((row, index) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td data-label="Items">${row.item}</td>
+                    <td data-label="Sale Price">${row.price.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                    <td data-label="Quantity">
+                        <input type="number" class="quantity-input" data-index="${index}" min="1" value="1">
+                    </td>
+                    <td data-label="Action"><button class="add-to-cart" data-index="${index}">Add to Cart</button></td>
+                `;
+                tableBody.appendChild(tr);
+            });
+        }
+
+        // Search functionality
+        document.getElementById('searchBar').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredData = itemsData.filter(row => row.item.toLowerCase().includes(searchTerm));
+            populateTable(filteredData);
+        });
+
+        // Add to cart
+        document.getElementById('itemsTable').addEventListener('click', function(e) {
+            if (e.target.classList.contains('add-to-cart')) {
+                const index = e.target.getAttribute('data-index');
+                const quantity = parseInt(document.querySelector(`.quantity-input[data-index="${index}"]`).value);
+                if (quantity > 0) {
+                    const item = { ...itemsData[index], quantity };
+                    cart.push(item);
+                    updateCartBar();
+                } else {
+                    alert('Please enter a valid quantity.');
+                }
+            }
+        });
+
+        // Update cart bar
+        function updateCartBar() {
+            const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cartCount').textContent = cartCount;
+        }
+
+        // Email modal handling
+        const emailModal = document.getElementById('emailModal');
+        document.getElementById('sendCart').addEventListener('click', function() {
+            if (cart.length === 0) {
+                alert('Cart is empty!');
+                return;
+            }
+            emailModal.style.display = 'flex';
+        });
+
+        document.getElementById('modalCancel').addEventListener('click', function() {
+            emailModal.style.display = 'none';
+        });
+
+        document.getElementById('modalSubmit').addEventListener('click', function() {
+            const senderName = document.getElementById('senderName').value.trim();
+            const senderContact = document.getElementById('senderContact').value.trim();
+            const senderOrg = document.getElementById('senderOrg').value.trim();
+            const senderPlace = document.getElementById('senderPlace').value.trim();
+            if (!senderName || !senderContact || !senderOrg || !senderPlace) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            const cartText = cart.map(item => `${item.item}: ${item.quantity} x ${item.price.toLocaleString('en-US', { minimumFractionDigits: 2 })} = ${(item.price * item.quantity).toLocaleString('en-US', { minimumFractionDigits: 2 })}`).join('\n');
+            const subject = 'Order from Gasdaniel Company Catalog';
+            const body = `Order Details:\n\nSender Name: ${senderName}\nSender Contact: ${senderContact}\nOrganization: ${senderOrg}\nPlace: ${senderPlace}\nDate: ${new Date().toLocaleDateString()}\n\nCart Contents:\n${cartText}\n\nTotal Items: ${cart.reduce((sum, item) => sum + item.quantity, 0)}\nTotal Price: ${cart.reduce((sum, item) => sum + (item.price * item.quantity), 0).toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
+            const mailtoLink = `mailto:orders@gasdaniel.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+            emailModal.style.display = 'none';
+            document.getElementById('senderName').value = '';
+            document.getElementById('senderContact').value = '';
+            document.getElementById('senderOrg').value = '';
+            document.getElementById('senderPlace').value = '';
+        });
+
+        // View cart modal handling
+        const cartModal = document.getElementById('cartModal');
+        document.getElementById('viewCart').addEventListener('click', function() {
+            if (cart.length === 0) {
+                alert('Cart is empty!');
+                return;
+            }
+            const cartItemsList = document.getElementById('cartItems');
+            const cartTotalPrice = document.getElementById('cartTotalPrice');
+            cartItemsList.innerHTML = '<ul>' + cart.map(item => `<li>${item.item}: ${item.quantity} x ${item.price.toLocaleString('en-US', { minimumFractionDigits: 2 })} = ${(item.price * item.quantity).toLocaleString('en-US', { minimumFractionDigits: 2 })}</li>`).join('') + '</ul>';
+            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            cartTotalPrice.textContent = `Total Price: ${totalPrice.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            cartModal.style.display = 'flex';
+        });
+
+        document.getElementById('cartClose').addEventListener('click', function() {
+            cartModal.style.display = 'none';
+        });
+
+        // Initial population of table
+        populateTable(itemsData);
+
+         // Function to hide loading screen and show main content
+            function hideLoading() {
+                const loading = document.getElementById('loading');
+                const mainContent = document.getElementById('main-content');
+                
+                // Fade out loading screen
+                loading.classList.add('hidden');
+                
+                // Show main content after fade-out transition
+                setTimeout(() => {
+                    loading.style.display = 'none';
+                    mainContent.style.display = 'block';
+                    document.body.style.overflow = 'auto'; // Restore scrolling
+                }, 500); // Match the transition duration in CSS
+            }
+    
+            // Simulate loading delay (e.g., 2 seconds) or use window.onload
+            window.onload = function() {
+                setTimeout(hideLoading, 2000); // 2-second delay for demonstration
+                // Alternatively, use: hideLoading(); to hide immediately after load
+            };
+    
+            // Optional: Hide loading screen immediately if content loads fast
+            document.addEventListener('DOMContentLoaded', function() {
+                // Uncomment the line below to hide loading screen as soon as DOM is ready
+                // hideLoading();
+            });
+        </script>
+        <!-- Bootstrap 5 JS (with Popper.js) -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
