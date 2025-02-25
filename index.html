@@ -826,38 +826,29 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-                <div class="col-md-4 form-group mt-3">
-                    <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit" class="btn btn-outline-info"><a href="index.html">Send Message</a></button>
-                </div>
-
-              </div>
-            </form>
+              <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <span class="error">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <span class="error">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <span class="error">Please enter a subject.</span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <span class="error">Please enter your message.</span>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
           </div><!-- End Contact Form -->
 
         </div>
@@ -990,7 +981,61 @@
 
     observer.observe(productsSection);
 </script>
+   <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
 
+            // Get form elements
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+
+            // Reset validation states
+            [name, email, subject, message].forEach(field => {
+                field.parentElement.classList.remove('invalid');
+            });
+
+            // Validation checks
+            let isValid = true;
+
+            if (!name.value.trim()) {
+                name.parentElement.classList.add('invalid');
+                isValid = false;
+            }
+            if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                email.parentElement.classList.add('invalid');
+                isValid = false;
+            }
+            if (!subject.value.trim()) {
+                subject.parentElement.classList.add('invalid');
+                isValid = false;
+            }
+            if (!message.value.trim()) {
+                message.parentElement.classList.add('invalid');
+                isValid = false;
+            }
+
+            // If form is valid, send email via mailto
+            if (isValid) {
+                const companyEmail = 'gasdaniel17@gmail.com'; // Replace with your company email
+                const mailtoSubject = encodeURIComponent(subject.value);
+                const mailtoBody = encodeURIComponent(
+                    `Name: ${name.value}\n` +
+                    `Email: ${email.value}\n` +
+                    `Subject: ${subject.value}\n` +
+                    `Message: ${message.value}\n` +
+                    `Date: ${new Date().toLocaleDateString()}`
+                );
+                const mailtoLink = `mailto:${companyEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
+                
+                // Open the user's email client
+                window.location.href = mailtoLink;
+
+
+            }
+        });
+    </script>
 </body>
 
 </html>
